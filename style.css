@@ -1,0 +1,95 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 40px;
+}
+.orange-color {
+    color: orange;
+}
+.flexible-area {
+    display: flex;
+    margin-bottom: 150px;
+}
+.half-width {
+    width: 50%;
+    padding-left: 2%;
+}
+.half-width img {
+    width: 80%;
+}
+.half-width p {
+    text-align: justify;
+    margin-right: 9% ;
+}    
+
+.link-button {
+    text-decoration: none;
+    background-image: linear-gradient(orange,tomato);
+    color: white;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.top-banner {
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
+}
+.top-banner p {
+    text-align: justify;
+    margin-right: 9% ;
+}
+.dream-big {
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.experience-area {
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.experience-items {
+    width: 40%;
+    margin-left: 5%;
+    margin-left: 5%;
+    padding-left: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px gray;
+}
+.experience-area p {
+    text-align: justify;
+    margin-right: 5%;
+}
+#full-stack{
+    border-left: 7px solid tomato;
+}
+#baby-web{
+    border-left: 7px solid blue;
+}
+footer p {
+    text-align: center;
+}
+/* Media Queries for Responsiveness */
+
+/* For devices with a width of 768px or less (tablets and mobiles) */
+@media screen and (max-width: 768px) {
+    .flexible-area {
+        flex-direction: column;
+    }
+    .half-width {
+        width: 100%;
+    }
+    .link-button {
+        padding: 8px 20px; /* Adjust padding for better mobile experience */
+    }
+    .experience-items {
+        width: 90%; /* Adjust width for better mobile experience */
+        margin: 10px auto; /* Center the experience items */
+    }
+}
